@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-对象-BOM</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+    //获取
+    window.alert("Hello BOM");
+    alert("Hello BOM");
+
+    //方法
+    //confirm - 对话框/确认框: 返回true/false
+    var result = confirm("Are you sure?");
+    alert(result);
+
+    //定时器 - setInterval -- 周期性的执行某一个函数
+    var count = 0;
+    setInterval(function() {
+        count++;
+        alert("定时器执行了: " + count + "次");
+    }, 2000);
+
+    //定时器 - setTimeout -- 延迟指定时间执行一次
+    setTimeout(function() {
+        alert("定时器只执行我一次");
+    }, 5000);
+
+    //location
+    alert("当前页面URL: " + location.href);
+    // location.href = "https://www.baidu.com";
+    location.href = "https://www.baidu.com";
+
+</script>
+</html>
